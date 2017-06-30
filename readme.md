@@ -40,6 +40,8 @@ Within any view file (preferable your master layout).
 
 ```html
 @include('notify::notify')
+
+
 ```
 
 Within any Controller.
@@ -48,15 +50,15 @@ Within any Controller.
 public function index()
 {
     // helper function - default to the 'info'
-	notify('Title', 'Description');
-	
-	// return object first
-	notify()->info('Content');
-	
-	// via the facade
+    notify('Content');
+
+    // return object first
+    notify()->info('Content');
+
+    // via the facade
     Notify::info('Content');
-	
-	return view('home');
+    
+    return view('home');
 }
 ```
 
@@ -86,14 +88,6 @@ php artisan vendor:publish --provider="Ghanem\Notify\NotifyServiceProvider" --ta
 Find the files here `public\vendor\notify\`.
 Move the mp3s to `public\sounds\`.
 If you use Laravel Elixir, move the css and js to your `resource\assets` and include them in your gulpfile.js, otherwise link to the individual files in your html header.
-
-## TODO
-
-- Provide an example
-- Maybe a config file (sound on/off, sound path, position, fade in/out, etc)
-- Cleanup code (decide on the animations.css)
-- Maybe add a bigger box
-- Maybe add a 'modal' option (bootstrap's modal)
 
 ## Note
 
