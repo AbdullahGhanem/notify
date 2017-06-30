@@ -32,7 +32,7 @@ class NotifyServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('notify', function () {
-            return $this->app->make('Bpocallaghan\Notify\Notify');
+            return $this->app->make('Ghanem\Notify\Notify');
         });
     }
 }
