@@ -72,7 +72,7 @@ The different arguments:
 If you need to modify the view partial, you can run:
 
 ```bash
-php artisan vendor:publish --provider="Bpocallaghan\Notify\NotifyServiceProvider" --tag=view
+php artisan vendor:publish --provider="Ghanem\Notify\NotifyServiceProvider" --tag=view
 ```
 
 The view partial can be found here `resources\views\vendor\notify\notify.blade`.
@@ -80,7 +80,7 @@ The view partial can be found here `resources\views\vendor\notify\notify.blade`.
 You need to publish the assets.
 
 ```bash
-php artisan vendor:publish --provider="Bpocallaghan\Notify\NotifyServiceProvider" --tag=public
+php artisan vendor:publish --provider="Ghanem\Notify\NotifyServiceProvider" --tag=public
 ```
 
 Find the files here `public\vendor\notify\`.
